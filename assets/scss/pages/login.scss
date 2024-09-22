@@ -1,0 +1,32 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* 將主內容區域撐滿頁面 */
+}
+.tab-area {
+  width: 50%;
+  min-width: 400px;
+  input {
+    width: 100%;
+    max-width: 400px;
+  }
+  .tab-input-area {
+    max-width: 400px;
+    margin: 0 auto;
+    button {
+      background-color: $primary;
+    }
+    button:hover {
+      background-color: #d2ca8b;
+    }
+  }
+}

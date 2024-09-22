@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <title>index</title>
+  </head>
+  <body class="bg-gray-950">
+    <%- include('./layout/header'); -%>
+    <main class="mt6">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="profile-card bg-gray-500 text-center p12">
+              <img
+                src="/assets/images/Ellipse 2@2x.png"
+                alt="profile-pic"
+                class="mt12"
+              />
+              <p class="text-gray-200 fz-3 mt12 mb3">
+                我正在COS&nbsp;&nbsp;魏璎珞 (延禧宮略)
+              </p>
+              <h1 class="text-gray-100 fz-7 mb3">于小姐的秘密空間</h1>
+              <p class="text-gray-300 mb12">
+                我超愛看劇的，<br />天天沙發馬鈴薯，<br />經常在沙發上睡著，<br />半夜還被冷醒......
+              </p>
+              <ul class="text-gray-200 pl0 fz-5">
+                <li class="mb4">
+                  <i data-feather="message-square" class="mr3 my-icon"></i>12則
+                  聊串
+                </li>
+                <li class="mb4">
+                  <i data-feather="users" class="mr3 my-icon"></i>18個 劇友
+                </li>
+                <li>
+                  <i data-feather="bell" class="mr3 my-icon"></i>64個 關注
+                </li>
+              </ul>
+              <ul class="fz-4 mt12 d-flex justify-content-center pl0 gap-3">
+                <li>
+                  <button
+                    class="setting-btns bg-gray-500 px9 py1 text-gray-300"
+                  >
+                    <i
+                      data-feather="edit-2"
+                      class="mr3 my-setting-icon align-baseline"
+                    ></i
+                    >編輯
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="setting-btns bg-gray-500 px9 py1 text-gray-300"
+                  >
+                    <i
+                      data-feather="settings"
+                      class="mr3 my-setting-icon align-baseline"
+                    ></i
+                    >設定
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="following-card bg-gray-500 p12 pb18">
+              <h2 class="text-white fz-7 mb6">我正在追</h2>
+              <div
+                id="carouselExample"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators mt6">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+
+                <!-- 卡片的輪播內容 -->
+
+                <div class="carousel-inner">
+                  <!-- 第一頁卡片 -->
+                  <div class="carousel-item active">
+                    <div class="">
+                      <!-- 第一行 -->
+                      <div class="row">
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-1.png"
+                                class="card-img-top img-fluid img-object"
+                                alt="淚之女王"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">淚之女王</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-2.jpg"
+                                class="card-img-top img-fluid img-object"
+                                alt="復仇者聯盟"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">復仇者聯盟</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-3.jpg"
+                                class="card-img-top img-fluid img-object"
+                                alt="魷魚遊戲"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">魷魚遊戲</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-4.jpg"
+                                class="card-img-top img-fluid img-object"
+                                alt="月之戀人"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">月之戀人</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                      <!-- 第二行 -->
+                      <div class="row mt3">
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-5.jpeg"
+                                class="card-img-top img-fluid img-object"
+                                alt="人選之人-造浪者"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">人選之人-造浪者</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-6.png"
+                                class="card-img-top img-fluid img-object"
+                                alt="地面師"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">地面師</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-7.jpg"
+                                class="card-img-top img-fluid img-object"
+                                alt="京城怪物"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">京城怪物</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-8.png"
+                                class="card-img-top img-fluid img-object"
+                                alt="華燈初上"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">華燈初上</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 第二頁卡片 -->
+                  <div class="carousel-item">
+                    <div class="">
+                      <!-- 第一行 -->
+                      <div class="row">
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-1.png"
+                                class="card-img-top img-fluid img-object"
+                                alt="淚之女王"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">淚之女王</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-2.jpg"
+                                class="card-img-top img-fluid img-object"
+                                alt="復仇者聯盟"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">復仇者聯盟</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-3.jpg"
+                                class="card-img-top img-fluid img-object"
+                                alt="魷魚遊戲"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">魷魚遊戲</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-4.jpg"
+                                class="card-img-top img-fluid img-object"
+                                alt="月之戀人"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">月之戀人</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                      <!-- 第二行 -->
+                      <div class="row mt3">
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-5.jpeg"
+                                class="card-img-top img-fluid img-object"
+                                alt="人選之人-造浪者"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">人選之人-造浪者</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-6.png"
+                                class="card-img-top img-fluid img-object"
+                                alt="地面師"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">地面師</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-7.jpg"
+                                class="card-img-top img-fluid img-object"
+                                alt="京城怪物"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">京城怪物</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-8.png"
+                                class="card-img-top img-fluid img-object"
+                                alt="華燈初上"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">華燈初上</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 第三頁卡片 -->
+                  <div class="carousel-item">
+                    <div class="">
+                      <!-- 第一行 -->
+                      <div class="row">
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-1.png"
+                                class="card-img-top img-fluid img-object"
+                                alt="淚之女王"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">淚之女王</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-2.jpg"
+                                class="card-img-top img-fluid img-object"
+                                alt="復仇者聯盟"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">復仇者聯盟</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-3.jpg"
+                                class="card-img-top img-fluid img-object"
+                                alt="魷魚遊戲"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">魷魚遊戲</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-4.jpg"
+                                class="card-img-top img-fluid img-object"
+                                alt="月之戀人"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">月之戀人</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                      <!-- 第二行 -->
+                      <div class="row mt3">
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-5.jpeg"
+                                class="card-img-top img-fluid img-object"
+                                alt="人選之人-造浪者"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">人選之人-造浪者</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-6.png"
+                                class="card-img-top img-fluid img-object"
+                                alt="地面師"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">地面師</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-7.jpg"
+                                class="card-img-top img-fluid img-object"
+                                alt="京城怪物"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">京城怪物</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb3">
+                          <a href="#" class="d-block text-decoration-none">
+                            <div class="card bg-dark text-white">
+                              <img
+                                src="/assets/images/following-card-1-8.png"
+                                class="card-img-top img-fluid img-object"
+                                alt="華燈初上"
+                              />
+                              <div class="card-body">
+                                <h5 class="fz-4">華燈初上</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="my-collections bg-gray-500 p12 mt6">
+              <div class="container mt-5">
+                <!-- Tabs -->
+                <ul
+                  class="nav nav-tabs justify-content-center"
+                  id="myTab"
+                  role="tablist"
+                >
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="chat-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#chat"
+                      type="button"
+                      role="tab"
+                      aria-controls="chat"
+                      aria-selected="true"
+                    >
+                      聊串牆
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="collection-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#collection"
+                      type="button"
+                      role="tab"
+                      aria-controls="collection"
+                      aria-selected="false"
+                    >
+                      典藏集
+                    </button>
+                  </li>
+                </ul>
+
+                <!-- Tab Contents -->
+                <div class="tab-content" id="myTabContent">
+                  <!-- 聊串牆內容 -->
+                  <div
+                    class="tab-pane fade show active"
+                    id="chat"
+                    role="tabpanel"
+                    aria-labelledby="chat-tab"
+                  >
+                    <div class="mt-4">
+                      <h2 class="text-white">hello world</h2>
+                      <p>hello world</p>
+                    </div>
+                  </div>
+
+                  <!-- 典藏集內容 -->
+                  <div
+                    class="tab-pane fade"
+                    id="collection"
+                    role="tabpanel"
+                    aria-labelledby="collection-tab"
+                  >
+                    <!-- 卡片部分 -->
+                    <div class="row mt-4">
+                      <!-- 第一列 -->
+                      <div class="col-lg-4 col-md-6 mb-3">
+                        <a href="#" class="text-decoration-none d-block">
+                          <div class="card bg-dark text-white">
+                            <img
+                              src="git i"
+                              class="card-img-top img-fluid img-object"
+                              alt=""
+                            />
+                            <div class="card-body">
+                              <h5 class="fz-4">+</h5>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 mb-3">
+                        <a href="#" class="text-decoration-none d-block">
+                          <div class="card bg-dark text-white">
+                            <img
+                              src="https://via.placeholder.com/150"
+                              class="card-img-top img-fluid img-object"
+                              alt="典藏集2"
+                            />
+                            <div class="card-body">
+                              <h5 class="fz-4">漫威系列</h5>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 mb-3">
+                        <a href="#" class="text-decoration-none d-block">
+                          <div class="card bg-dark text-white">
+                            <img
+                              src="https://via.placeholder.com/150"
+                              class="card-img-top img-fluid img-object"
+                              alt="典藏集3"
+                            />
+                            <div class="card-body">
+                              <h5 class="fz-4">美劇系列</h5>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <!-- 第二列 -->
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 mb-3">
+                        <a href="#" class="text-decoration-none d-block">
+                          <div class="card bg-dark text-white">
+                            <img
+                              src="https://via.placeholder.com/150"
+                              class="card-img-top img-fluid img-object"
+                              alt="典藏集4"
+                            />
+                            <div class="card-body">
+                              <h5 class="fz-4">經典懸疑</h5>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 mb-3">
+                        <a href="#" class="text-decoration-none d-block">
+                          <div class="card bg-dark text-white">
+                            <img
+                              src="https://via.placeholder.com/150"
+                              class="card-img-top img-fluid img-object"
+                              alt="典藏集5"
+                            />
+                            <div class="card-body">
+                              <h5 class="fz-4">愛情電影</h5>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 mb-3">
+                        <a href="#" class="text-decoration-none d-block">
+                          <div class="card bg-dark text-white">
+                            <img
+                              src="https://via.placeholder.com/150"
+                              class="card-img-top img-fluid img-object"
+                              alt="典藏集6"
+                            />
+                            <div class="card-body">
+                              <h5 class="fz-4">冒險電影</h5>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
