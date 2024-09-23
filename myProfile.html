@@ -10,8 +10,8 @@
     />
 
     <title>index</title>
-    <script type="module" crossorigin src="/moviemeetEricWindows/assets/all-46ab63b0.js"></script>
-    <link rel="stylesheet" href="/moviemeetEricWindows/assets/all-023bb24f.css">
+    <script type="module" crossorigin src="/moviemeetEricWindows/assets/all-03310e79.js"></script>
+    <link rel="stylesheet" href="/moviemeetEricWindows/assets/all-22b1107e.css">
   </head>
   <body class="bg-gray-950">
     <nav class="navbar navbar-expand-lg navbar-dark header-nav">
@@ -52,7 +52,7 @@
             <a class="nav-link text-gray-100">典藏</a>
           </li>
           <li class="nav-item mb7">
-            <a class="nav-link text-gray-100" href="/pages/login.html"
+            <a class="nav-link text-gray-100" href="../pages/index.html"
               >註冊/登入</a
             >
           </li>
@@ -118,6 +118,7 @@
       <button
         type="button"
         class="btn btn-link text-gray-100 text-decoration-none"
+        onclick="window.location.href = 'index.html'"
       >
         註冊/登入
       </button>
@@ -589,16 +590,16 @@
               </div>
             </div>
             <div class="my-collections bg-gray-500 p12 mt6">
-              <div class="container mt-5">
+              <div class="">
                 <!-- Tabs -->
                 <ul
-                  class="nav nav-tabs justify-content-center"
+                  class="nav nav-tabs justify-content-center nav-fill fz-6"
                   id="myTab"
                   role="tablist"
                 >
                   <li class="nav-item" role="presentation">
                     <button
-                      class="nav-link active"
+                      class="nav-link active text-gray-300"
                       id="chat-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#chat"
@@ -612,7 +613,7 @@
                   </li>
                   <li class="nav-item" role="presentation">
                     <button
-                      class="nav-link"
+                      class="nav-link text-gray-300"
                       id="collection-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#collection"
@@ -649,30 +650,41 @@
                     aria-labelledby="collection-tab"
                   >
                     <!-- 卡片部分 -->
-                    <div class="row mt-4">
+                    <div class="row mt-4 collection-cards">
                       <!-- 第一列 -->
-                      <div class="col-lg-4 col-md-6 mb-3">
+                      <div class="col-lg-4 col-md-6 mb3">
+                        <button
+                          class="card bg-gray-400 text-white text-center d-flex justify-content-center align-items-center add-collection-btn"
+                        >
+                          <div>
+                            <span>+</span>
+                            <p class="mt-2">新增典藏夾</p>
+                          </div>
+                        </button>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 mb3">
                         <a href="#" class="text-decoration-none d-block">
                           <div class="card bg-dark text-white">
                             <img
-                              src="git i"
+                              src="/moviemeetEricWindows/assets/following-card-1-6-445fb2a1.png"
                               class="card-img-top img-fluid img-object"
-                              alt=""
+                              alt="地面師"
                             />
                             <div class="card-body">
-                              <h5 class="fz-4">+</h5>
+                              <h5 class="fz-4">近期愛劇</h5>
                             </div>
                           </div>
                         </a>
                       </div>
 
-                      <div class="col-lg-4 col-md-6 mb-3">
+                      <div class="col-lg-4 col-md-6 mb3">
                         <a href="#" class="text-decoration-none d-block">
                           <div class="card bg-dark text-white">
                             <img
-                              src="https://via.placeholder.com/150"
+                              src="/moviemeetEricWindows/assets/following-card-1-2-ddb6bb65.jpg"
                               class="card-img-top img-fluid img-object"
-                              alt="典藏集2"
+                              alt="復仇者聯盟"
                             />
                             <div class="card-body">
                               <h5 class="fz-4">漫威系列</h5>
@@ -680,14 +692,17 @@
                           </div>
                         </a>
                       </div>
+                    </div>
 
-                      <div class="col-lg-4 col-md-6 mb-3">
+                    <!-- 第二列 -->
+                    <div class="row collection-cards mt3">
+                      <div class="col-lg-4 col-md-6 mb3">
                         <a href="#" class="text-decoration-none d-block">
                           <div class="card bg-dark text-white">
                             <img
-                              src="https://via.placeholder.com/150"
+                              src="/moviemeetEricWindows/assets/collections-american-drama-5dbd5a26.jpg"
                               class="card-img-top img-fluid img-object"
-                              alt="典藏集3"
+                              alt="美劇系列"
                             />
                             <div class="card-body">
                               <h5 class="fz-4">美劇系列</h5>
@@ -695,17 +710,14 @@
                           </div>
                         </a>
                       </div>
-                    </div>
 
-                    <!-- 第二列 -->
-                    <div class="row">
-                      <div class="col-lg-4 col-md-6 mb-3">
+                      <div class="col-lg-4 col-md-6 mb3">
                         <a href="#" class="text-decoration-none d-block">
                           <div class="card bg-dark text-white">
                             <img
-                              src="https://via.placeholder.com/150"
+                              src="/moviemeetEricWindows/assets/collections-classic-suspense-1b1abf69.jpg"
                               class="card-img-top img-fluid img-object"
-                              alt="典藏集4"
+                              alt="經典懸疑"
                             />
                             <div class="card-body">
                               <h5 class="fz-4">經典懸疑</h5>
@@ -714,31 +726,16 @@
                         </a>
                       </div>
 
-                      <div class="col-lg-4 col-md-6 mb-3">
+                      <div class="col-lg-4 col-md-6 mb3">
                         <a href="#" class="text-decoration-none d-block">
                           <div class="card bg-dark text-white">
                             <img
-                              src="https://via.placeholder.com/150"
+                              src="/moviemeetEricWindows/assets/collections-beauty-inside-bee2ac77.jpg"
                               class="card-img-top img-fluid img-object"
-                              alt="典藏集5"
+                              alt="一看再看"
                             />
                             <div class="card-body">
-                              <h5 class="fz-4">愛情電影</h5>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-
-                      <div class="col-lg-4 col-md-6 mb-3">
-                        <a href="#" class="text-decoration-none d-block">
-                          <div class="card bg-dark text-white">
-                            <img
-                              src="https://via.placeholder.com/150"
-                              class="card-img-top img-fluid img-object"
-                              alt="典藏集6"
-                            />
-                            <div class="card-body">
-                              <h5 class="fz-4">冒險電影</h5>
+                              <h5 class="fz-4">一看再看</h5>
                             </div>
                           </div>
                         </a>
