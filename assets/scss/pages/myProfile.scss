@@ -61,4 +61,41 @@
 .my-collections {
   border: 1px solid $gray-300;
   border-radius: 10px;
+  .nav-tabs {
+    border-bottom: 1px solid $gray-300;
+    .nav-link {
+      background-color: transparent;
+      border: none;
+    }
+    .nav-link.active {
+      border-bottom: 3px solid $primary;
+      color: white;
+    }
+  }
+
+  .collection-cards {
+    .add-collection-btn {
+      width: 100%;
+      height: 134px;
+      border-radius: 0;
+    }
+    .img-object {
+      height: 134px;
+      object-fit: cover;
+      width: 100%;
+      border-radius: 0;
+    }
+
+    .card-body {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 8px;
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50%;
+      color: white;
+      text-align: center;
+    }
+  }
 }
