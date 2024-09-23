@@ -1,10 +1,18 @@
 .profile-card {
   border: 1px solid $gray-300;
-
   border-radius: 10px;
+
   img {
     width: 240px;
     height: 240px;
+  }
+  .profile-pic-container {
+    .set-btn {
+      width: 44px;
+      height: 44px;
+      bottom: 0;
+      right: 10px;
+    }
   }
 
   .my-icon {
