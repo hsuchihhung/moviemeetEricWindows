@@ -35,3 +35,8 @@
     @content;
   }
 }
+@mixin hover-transform($scale) {
+  &:hover {
+    transform: scale($scale);
+  }
+}
